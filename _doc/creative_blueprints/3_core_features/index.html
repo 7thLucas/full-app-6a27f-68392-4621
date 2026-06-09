@@ -2,6 +2,7 @@
   .sl-features-grid { display: grid; gap: 1rem; flex: 1; }
   .mode-landscape .sl-features-grid { grid-template-columns: 1fr 1fr; }
   .mode-portrait .sl-features-grid { grid-template-columns: 1fr; }
+  .sl-features-vendor-full { grid-column: 1 / -1; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
   <div class="flex flex-col h-full p-10" style="gap:1rem;">
@@ -44,7 +45,7 @@
         <div>
           <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style="background:#C9932A;">
             <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/>
+              <path d="M3 2h18v4H3zM3 10h18v4H3zM3 18h18v4H3z"/>
             </svg>
           </div>
           <h3 class="font-bold text-base mb-2" style="color:#92400E;">Menu Planning</h3>
@@ -90,6 +91,29 @@
         </div>
         <div class="mt-4">
           <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Overview · Status · Control</span>
+        </div>
+      </div>
+
+      <!-- 5: Vendor Management — full-width new feature -->
+      <div class="sl-features-vendor-full rounded-xl p-6 flex flex-col" style="background:#FAF7F0; border-top:3px solid #C9932A; gap:0.75rem;">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center" style="background:#C9932A;">
+            <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-base mb-1" style="color:#92400E;">Vendor Management</h3>
+            <p class="text-sm leading-relaxed" style="color:#4B5563;">
+              Organise every supplier into categories — Florist, Linen &amp; Decor, AV &amp; Equipment, Catering Supplies, Transport, and more. Store full vendor info (name, contact, company, notes), assign required roles per event, and set work time frames (lead time, setup window, on-site hours) so every vendor is perfectly scheduled and nothing overlaps.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Categories</span>
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Vendor Info</span>
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Required Roles</span>
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Time Frames</span>
         </div>
       </div>
 
