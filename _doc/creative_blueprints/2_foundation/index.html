@@ -1,40 +1,52 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+  .sl-foundation-layout { display: flex; height: 100%; }
+  .mode-landscape .sl-foundation-layout { flex-direction: row; }
+  .mode-portrait .sl-foundation-layout { flex-direction: column; }
+  .mode-landscape .sl-foundation-content { width: 58%; }
+  .mode-landscape .sl-foundation-visual { width: 42%; }
+  .mode-portrait .sl-foundation-content { flex: 1; }
+  .mode-portrait .sl-foundation-visual { flex: 0 0 200px; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#1B5E47;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#1B5E47; border-color:#1B5E4730;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
+  <div class="sl-foundation-layout w-full h-full">
 
-        </span>
+    <!-- Left: problem + solution stacked -->
+    <div class="sl-foundation-content flex flex-col p-10" style="gap:1.25rem;">
+
+      <!-- Eyebrow -->
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9932A;">Why CaterFlow</span>
       </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Juggling multiple catering events without a central system</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Catering businesses juggling multiple events rely on scattered tools: spreadsheets for orders, sticky notes for menus, group chats for staff coordination. Details slip through the cracks—dietary restrictions missed, staff double-booked, menu inconsistencies damage reputation and revenue.</p>
-        </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#1B5E47;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#1B5E47;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Catering businesses coordinating several events simultaneously rely on fragmented tools—spreadsheets, sticky notes, group chats—leading to missed dietary restrictions, double-booked staff, inconsistent menus, and quality mishaps that damage reputation and profitability.</p>
-        </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Independent catering business owners and catering company managers overseeing multiple simultaneous events</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Transform operational chaos into calm, organised control—so teams deliver exceptional service and build loyal client relationships</p></div>
+
+      <!-- Problem zone -->
+      <div class="rounded-xl p-7 flex-1" style="background:#FAF7F0; border-left:4px solid #C9932A;">
+        <h2 class="font-bold text-xl mb-3" style="color:#111827;">The Problem</h2>
+        <p class="text-base leading-relaxed" style="color:#374151;">
+          Catering owners juggling multiple events lean on spreadsheets, sticky notes, and group chats. The result: missed details, double-booked staff, mismatched menus — and quality that suffers precisely when it matters most.
+        </p>
       </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">operations</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">event management</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">catering software</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">staff scheduling</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">menu planning</span></div>
-      <div class="mt-8"><data-attribution /></div>
+
+      <!-- Solution zone -->
+      <div class="rounded-xl p-7 flex-1" style="background:#1B5E47;">
+        <h2 class="font-bold text-xl mb-3" style="color:#FAF7F0;">The Solution</h2>
+        <p class="text-base leading-relaxed" style="color:#d1fae5;">
+          CaterFlow is a single, purpose-built workspace that connects every event order, menu, and staff assignment — giving catering owners complete visibility and control across all their events at once.
+        </p>
+      </div>
+
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://localhost:8001/common/image-generation?prompt=chaotic+catering+workspace+spreadsheets+sticky+notes+confusion&amp;keyspace=vjgqjbm6&amp;user_id=4621" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+
+    <!-- Right: supporting visual -->
+    <div class="sl-foundation-visual relative overflow-hidden" style="background:#0F3D2A;">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=calm+organised+catering+coordinator+reviewing+event+schedule+clipboard+professional+kitchen+top+view+focused&keyspace=vjgqjbm6&user_id=4621"
+        alt="Organised catering operations"
+        class="w-full h-full"
+        style="object-fit:cover; opacity:0.65;"
+      >
+      <!-- Subtle emerald-to-transparent gradient overlay on left edge for blend -->
+      <div style="position:absolute; inset:0; background:linear-gradient(to right, #0F3D2A 0%, transparent 40%);"></div>
     </div>
+
   </div>
 </section>
