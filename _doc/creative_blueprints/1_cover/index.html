@@ -1,0 +1,39 @@
+<style>
+  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
+  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
+  .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
+  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
+  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
+  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover-layout h-full">
+    <div class="sl-content-panel px-10 py-12">
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#1B5E47;">Catering Business Owner</p>
+          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">Every event. Every detail. Under control.</h1>
+          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">CaterFlow centralises event orders, menus, and staff scheduling into one organised workspace—so catering businesses run multiple events flawlessly, without chaos.</p>
+          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#C9932A; border-color:#1B5E4740;">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#1B5E47;">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
+
+          </div>
+        </div>
+        <div class="mt-auto pt-8">
+          <data-attribution />
+        </div>
+      </div>
+    </div>
+    <div class="sl-image-panel relative overflow-hidden">
+      <div class="absolute inset-0" style="background:linear-gradient(135deg, #1B5E47, #1B5E4720);"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-8">
+        <img src="http://localhost:8001/common/image-generation?prompt=professional+catering+team+managing+elegant+event+service+organized+workspace&amp;keyspace=vjgqjbm6&amp;user_id=4621" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
+      </div>
+    </div>
+  </div>
+</section>
