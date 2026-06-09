@@ -22,7 +22,8 @@ A calm, command-centre alternative to spreadsheets, sticky notes, and group chat
 1. **Event Order Management** — Create and track every event order (client, date, venue, headcount, budget, live status) on a master calendar dashboard.
 2. **Menu Planning** — Build reusable menus, assign dishes to events, and flag dietary restrictions and allergens per guest.
 3. **Staff Assignments** — Assign roles to events, detect availability conflicts in real time, and see cross-event allocation at a glance.
-4. **Multi-Event Dashboard** — Command-centre overview with status indicators (confirmed → prep → day-of → completed) across all active events.
+4. **Vendor Management** — Organise vendors into categories (e.g., Florist, Linen & Decor, AV & Equipment, Catering Supplies, Transport). Store complete vendor info (name, contact, company, notes), assign required roles per event, and define work time frames (lead time, setup window, on-site hours) so every supplier is scheduled and aligned.
+5. **Multi-Event Dashboard** — Command-centre overview with status indicators (confirmed → prep → day-of → completed) across all active events.
 
 ## Core problems solved
 - Scattered coordination across spreadsheets, sticky notes, and group chats
