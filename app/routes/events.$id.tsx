@@ -733,10 +733,20 @@ function AssignVendorModal({
     const data = Object.fromEntries(new FormData(form));
 
     try {
+      const payload: Record<string, unknown> = {
+        eventId,
+        vendorId: data.vendorId,
+        requiredRole: data.requiredRole || undefined,
+        notes: data.notes || undefined,
+        leadTimeDays: data.leadTimeDays ? Number(data.leadTimeDays) : undefined,
+        setupWindowStart: data.setupWindowStart || undefined,
+        setupWindowEnd: data.setupWindowEnd || undefined,
+        onSiteStart: data.onSiteStart || undefined,
+      };
       const res = await fetch("/api/vendor-assignments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, eventId }),
+        body: JSON.stringify(payload),
       });
       const json = await res.json();
       if (!json.success) throw new Error(json.error);
@@ -780,6 +790,50 @@ function AssignVendorModal({
             placeholder="e.g. Florist, AV Setup"
             className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B5E47]/30 focus:border-[#1B5E47]"
           />
+        </div>
+
+        <div className="rounded-lg bg-gray-50 border border-gray-100 p-3 space-y-3">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1.5">
+            <Clock size={12} />
+            Time Frames
+          </p>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Lead time (days)</label>
+              <input
+                name="leadTimeDays"
+                type="number"
+                min="0"
+                defaultValue="7"
+                placeholder="7"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B5E47]/30 focus:border-[#1B5E47] bg-white"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Setup window start</label>
+              <input
+                name="setupWindowStart"
+                type="datetime-local"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B5E47]/30 focus:border-[#1B5E47] bg-white"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Setup window end</label>
+              <input
+                name="setupWindowEnd"
+                type="datetime-local"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B5E47]/30 focus:border-[#1B5E47] bg-white"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">On-site start</label>
+              <input
+                name="onSiteStart"
+                type="datetime-local"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B5E47]/30 focus:border-[#1B5E47] bg-white"
+              />
+            </div>
+          </div>
         </div>
 
         <div>
