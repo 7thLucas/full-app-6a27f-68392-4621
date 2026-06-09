@@ -1,0 +1,1 @@
+Build me an app for catering service owners to help them manage event orders, menu planning, and staff assignments with the goal to handle multiple events smoothly without dropping quality
