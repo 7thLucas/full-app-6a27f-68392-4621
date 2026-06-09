@@ -7,7 +7,7 @@ import { AppLayout } from "~/components/layout/AppLayout";
 import { PageHeader } from "~/components/shared/PageHeader";
 import { EmptyState } from "~/components/shared/EmptyState";
 import { Modal } from "~/components/shared/Modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   UtensilsCrossed,
   Plus,
@@ -247,9 +247,9 @@ function MenuModal({
   const [tagInput, setTagInput] = useState("");
 
   // Reset when menu changes
-  useState(() => {
+  useEffect(() => {
     setDishes(menu?.dishes ?? []);
-  });
+  }, [menu]);
 
   const addDish = () => {
     if (!dishInput.name.trim()) return;

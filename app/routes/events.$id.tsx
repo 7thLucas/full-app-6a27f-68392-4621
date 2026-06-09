@@ -326,6 +326,15 @@ export default function EventDetailPage() {
                         {assignment.requiredRole && (
                           <div className="text-xs text-gray-400 mt-0.5">Role: {assignment.requiredRole}</div>
                         )}
+                        {assignment.leadTimeDays != null && (
+                          <div className="text-xs text-gray-400 mt-0.5">Lead: {assignment.leadTimeDays}d</div>
+                        )}
+                        {assignment.setupWindowStart && (
+                          <div className="text-xs text-gray-400">
+                            Setup: {new Date(assignment.setupWindowStart).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}
+                            {assignment.setupWindowEnd && ` – ${new Date(assignment.setupWindowEnd).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}`}
+                          </div>
+                        )}
                       </div>
                       <button
                         onClick={() => handleRemoveVendor(assignment._id)}
