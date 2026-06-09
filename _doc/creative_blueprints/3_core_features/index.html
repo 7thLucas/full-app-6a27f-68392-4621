@@ -1,0 +1,98 @@
+<style>
+  .sl-features-grid { display: grid; gap: 1rem; flex: 1; }
+  .mode-landscape .sl-features-grid { grid-template-columns: 1fr 1fr; }
+  .mode-portrait .sl-features-grid { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10" style="gap:1rem;">
+
+    <!-- Header row: title + persona chips -->
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9932A;">Platform Features</span>
+        <h2 class="font-extrabold text-2xl mt-1" style="color:#1B5E47;">Built for catering, end to end</h2>
+      </div>
+      <div class="flex gap-2 flex-shrink-0 mt-1">
+        <span class="rounded-full px-4 py-1.5 text-sm font-semibold" style="background:#1B5E47; color:#FAF7F0;">Catering Owner</span>
+        <span class="rounded-full px-4 py-1.5 text-sm font-medium" style="background:#E9ECEF; color:#374151;">Event Coordinator</span>
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-features-grid">
+
+      <!-- 1: Event Order Management -->
+      <div class="rounded-xl p-6 flex flex-col justify-between" style="background:#FAF7F0; border-top:3px solid #1B5E47;">
+        <div>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style="background:#1B5E47;">
+            <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-base mb-2" style="color:#1B5E47;">Event Order Management</h3>
+          <p class="text-sm leading-relaxed" style="color:#4B5563;">
+            Create and track every event order — client, date, venue, headcount, budget, and live status — on a master calendar dashboard.
+          </p>
+        </div>
+        <div class="mt-4">
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#1B5E47; color:#FAF7F0;">Orders · Calendar · Status</span>
+        </div>
+      </div>
+
+      <!-- 2: Menu Planning -->
+      <div class="rounded-xl p-6 flex flex-col justify-between" style="background:#FAF7F0; border-top:3px solid #C9932A;">
+        <div>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style="background:#C9932A;">
+            <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-base mb-2" style="color:#92400E;">Menu Planning</h3>
+          <p class="text-sm leading-relaxed" style="color:#4B5563;">
+            Build reusable menus and assign dishes to events. Flag dietary restrictions and allergens so every guest's needs are accounted for.
+          </p>
+        </div>
+        <div class="mt-4">
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Menus · Dishes · Allergens</span>
+        </div>
+      </div>
+
+      <!-- 3: Staff Assignments -->
+      <div class="rounded-xl p-6 flex flex-col justify-between" style="background:#FAF7F0; border-top:3px solid #1B5E47;">
+        <div>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style="background:#1B5E47;">
+            <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-base mb-2" style="color:#1B5E47;">Staff Assignments</h3>
+          <p class="text-sm leading-relaxed" style="color:#4B5563;">
+            Assign staff roles to each event, check availability conflicts in real time, and see at a glance who is allocated where across all events.
+          </p>
+        </div>
+        <div class="mt-4">
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#1B5E47; color:#FAF7F0;">Roles · Availability · Conflicts</span>
+        </div>
+      </div>
+
+      <!-- 4: Multi-Event Dashboard -->
+      <div class="rounded-xl p-6 flex flex-col justify-between" style="background:#1B5E47; border-top:3px solid #C9932A;">
+        <div>
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center mb-3" style="background:#C9932A;">
+            <svg width="16" height="16" fill="none" stroke="#FAF7F0" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-base mb-2" style="color:#FAF7F0;">Multi-Event Dashboard</h3>
+          <p class="text-sm leading-relaxed" style="color:#d1fae5;">
+            A command-centre overview with status indicators — confirmed, prep, day-of, completed — across every active event so nothing falls through the cracks.
+          </p>
+        </div>
+        <div class="mt-4">
+          <span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#C9932A; color:#FAF7F0;">Overview · Status · Control</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
