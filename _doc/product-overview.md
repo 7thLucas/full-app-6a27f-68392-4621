@@ -1,40 +1,43 @@
 # Product Overview — CaterFlow
 
-## What It Is
-CaterFlow is a web-based operations platform built for catering service owners and managers. It centralises event order management, menu planning, and staff scheduling into one place, so catering businesses can run multiple events simultaneously without sacrificing quality or letting details slip.
+## What the product is
+CaterFlow is a catering operations and event planning platform built for catering business owners and event coordinators. It brings event orders, menu planning, and staff assignments into a single, purpose-built workspace so operators can run multiple events simultaneously without sacrificing quality or detail.
 
-## Target Users
-- **Primary**: Independent catering business owners and catering company managers
-- **Secondary**: Senior catering coordinators who oversee multiple event teams
-
-## Core Problem
-Catering businesses juggling several events at once rely on spreadsheets, sticky notes, and group chats — leading to missed details, double-booked staff, mis-matched menus, and quality inconsistencies. CaterFlow replaces that fragmented chaos with a single organised workspace.
-
-## Key Features
-1. **Event Order Management** — Create and track event orders (client, date, venue, headcount, budget, status). View all upcoming events on a master calendar/dashboard.
-2. **Menu Planning** — Build reusable menus, assign menus or individual dishes to events, flag dietary restrictions and allergens, and track ingredient prep notes.
-3. **Staff Assignments** — Assign staff roles to each event, check availability conflicts, and see at a glance who is allocated where across all events.
-4. **Multi-Event Dashboard** — A command-centre overview showing every active event with status indicators (confirmed, prep, day-of, completed) so nothing falls through the cracks.
+## Target users
+- **Primary:** Catering business owners managing multiple events at once
+- **Secondary:** Event coordinators working under or alongside catering owners
 
 ## Positioning
-- **Category**: Catering operations / event management software
-- **Differentiator**: Purpose-built for catering owners — not a generic project tool. Combines menus, orders, and staff in one coherent workflow.
-- **Tone**: Professional, calm, efficient. Warm hospitality feel without being fussy.
+A calm, command-centre alternative to spreadsheets, sticky notes, and group chats. CaterFlow is purpose-built for catering — not a generic project tool — which means every feature maps directly to the catering event lifecycle.
 
-## Brand
-- **Name**: CaterFlow
-- **Tagline**: *Every event. Every detail. Under control.*
-- **Palette**: Deep emerald (`#1B5E47`) primary, warm cream (`#FAF7F0`) background, gold accent (`#C9932A`)
-- **Typography**: Clean sans-serif (Inter or equivalent); confident headings, readable body
+## Product name & branding
+- **Name:** CaterFlow
+- **Category label:** Catering Operations Platform
+- **Primary colour:** Emerald green `#1B5E47`
+- **Accent colour:** Warm gold `#C9932A`
+- **Background/warm neutral:** `#FAF7F0`
+- **Tone:** Professional, calm, confident — "Every event. Every detail. Under control."
 
-## Scope (MVP)
-- Dashboard with event list and status overview
-- Event order CRUD (create / edit / view / delete)
-- Menu builder (menus → dishes, linked to events)
-- Staff roster + per-event assignment panel
-- Basic conflict detection for staff double-booking
+## Core features
+1. **Event Order Management** — Create and track every event order (client, date, venue, headcount, budget, live status) on a master calendar dashboard.
+2. **Menu Planning** — Build reusable menus, assign dishes to events, and flag dietary restrictions and allergens per guest.
+3. **Staff Assignments** — Assign roles to events, detect availability conflicts in real time, and see cross-event allocation at a glance.
+4. **Multi-Event Dashboard** — Command-centre overview with status indicators (confirmed → prep → day-of → completed) across all active events.
 
-## Strategic Principles
-- Every screen must answer: "What do I need to do right now for today's events?"
-- Reduce clicks; surfacing the most time-sensitive information first
-- Data stays coherent: changing an event date propagates through menus and staff views
+## Core problems solved
+- Scattered coordination across spreadsheets, sticky notes, and group chats
+- Double-booked staff due to no conflict detection
+- Mismatched menus and missed dietary requirements
+- Loss of quality visibility when running multiple events simultaneously
+
+## Key benefits
+- **Visibility:** Every order, menu, and staff assignment in one place — nothing slips.
+- **Staffing:** Built-in conflict detection eliminates double-bookings.
+- **Quality:** Reusable menus and standardised workflows keep service consistent across 1 or 10 events.
+- **Scalability:** Command-centre dashboard lets owners confidently take on more business.
+
+## Strategic principles
+- Purpose-built for catering, not adapted from a generic tool
+- Calm UX — reduce cognitive load for operators during high-pressure event weeks
+- Reusability as a first-class concept (menus, staff rosters, workflows)
+- Scale without sacrificing the quality that built the owner's reputation
